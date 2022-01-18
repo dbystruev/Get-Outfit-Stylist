@@ -92,6 +92,9 @@ extension AppDelegate: UIApplicationDelegate {
             
             // Update the list of occasions from the server
             AppDelegate.updateOccasions()
+            
+            // Update the list of users from the server
+            AppDelegate.updateUsers()
         }
         
         // Change global tint color

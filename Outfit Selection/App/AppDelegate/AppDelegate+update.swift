@@ -58,7 +58,7 @@ extension AppDelegate {
         let startTime = Date()
         
         NetworkManager.shared.getOnboarding { onboardings in
-            // Makr sure we don't update onboardings with error values
+            // Make sure we don't update onboardings with error values
             guard let onboardings = onboardings else {
                 completion(false)
                 return
@@ -73,6 +73,23 @@ extension AppDelegate {
             debug("INFO: Loaded \(Onboarding.all.count) onboarding screens in \(elapsedTime.asTime) s")
             
             completion(true)
+        }
+    }
+    
+    /// Load users from the server
+    static func updateUsers() {
+        let startTime = Date()
+        
+        NetworkManager.shared.getUsers { users in
+            // Make sure we don't update users with error values
+            guard let users = users else { return }
+            
+            // Update onboardings
+            Users.all = users
+            
+            // Show elapsed time
+            let elapsedTime = Date().timeIntervalSince(startTime)
+            debug("INFO: Loaded \(Users.all.count) users in \(elapsedTime.asTime) s")
         }
     }
 }
