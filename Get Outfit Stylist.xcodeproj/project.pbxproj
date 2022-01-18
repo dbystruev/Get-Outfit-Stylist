@@ -1469,9 +1469,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69A6F6EF22BA26B7002A3B49 /* Outfit Selection */ = {
+		69A6F6EF22BA26B7002A3B49 /* Get Outfit Stylist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69A6F70222BA26BA002A3B49 /* Build configuration list for PBXNativeTarget "Outfit Selection" */;
+			buildConfigurationList = 69A6F70222BA26BA002A3B49 /* Build configuration list for PBXNativeTarget "Get Outfit Stylist" */;
 			buildPhases = (
 				69A6F6EC22BA26B7002A3B49 /* Sources */,
 				69A6F6ED22BA26B7002A3B49 /* Frameworks */,
@@ -1481,7 +1481,7 @@
 			);
 			dependencies = (
 			);
-			name = "Outfit Selection";
+			name = "Get Outfit Stylist";
 			packageProductDependencies = (
 				6962099F26FB927E00B46FE8 /* AppsFlyerLib */,
 				6998123F27037590007B7024 /* IBPCollectionViewCompositionalLayout */,
@@ -1506,7 +1506,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 69A6F6EB22BA26B7002A3B49 /* Build configuration list for PBXProject "Outfit Selection" */;
+			buildConfigurationList = 69A6F6EB22BA26B7002A3B49 /* Build configuration list for PBXProject "Get Outfit Stylist" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1525,7 +1525,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69A6F6EF22BA26B7002A3B49 /* Outfit Selection */,
+				69A6F6EF22BA26B7002A3B49 /* Get Outfit Stylist */,
 			);
 		};
 /* End PBXProject section */
@@ -1968,9 +1968,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Concept";
 				CODE_SIGN_ENTITLEMENTS = "Outfit Selection/Outfit Selection.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022.01.10;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2022.01.18;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1984,7 +1984,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.getoutfit.concept;
 				PRODUCT_NAME = "Concept Group";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2067,9 +2067,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Raskroi";
 				CODE_SIGN_ENTITLEMENTS = "Outfit Selection/Outfit Selection.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022.01.10;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2022.01.18;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2083,7 +2083,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.getoutfit.raskroi;
 				PRODUCT_NAME = Raskroi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2228,7 +2228,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Outfit Selection/Outfit Selection.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022.01.10;
+				CURRENT_PROJECT_VERSION = 2022.01.18;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2243,8 +2243,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.getoutfit.stylist;
+				MARKETING_VERSION = 0.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.getoutfit.stylist;
 				PRODUCT_NAME = "Get Outfit";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -2260,7 +2260,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Outfit Selection/Outfit Selection.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022.01.10;
+				CURRENT_PROJECT_VERSION = 2022.01.18;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2274,9 +2274,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.1.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.getoutfit.stylist;
+				PRODUCT_BUNDLE_IDENTIFIER = app.getoutfit.stylist;
 				PRODUCT_NAME = "Get Outfit";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -2287,7 +2287,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69A6F6EB22BA26B7002A3B49 /* Build configuration list for PBXProject "Outfit Selection" */ = {
+		69A6F6EB22BA26B7002A3B49 /* Build configuration list for PBXProject "Get Outfit Stylist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69A6F70022BA26BA002A3B49 /* Debug */,
@@ -2298,7 +2298,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69A6F70222BA26BA002A3B49 /* Build configuration list for PBXNativeTarget "Outfit Selection" */ = {
+		69A6F70222BA26BA002A3B49 /* Build configuration list for PBXNativeTarget "Get Outfit Stylist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69A6F70322BA26BA002A3B49 /* Debug */,

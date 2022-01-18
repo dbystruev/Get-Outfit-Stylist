@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "69A6F6EF22BA26B7002A3B49"
                BuildableName = "Get Outfit.app"
-               BlueprintName = "Outfit Selection"
-               ReferencedContainer = "container:Outfit Selection.xcodeproj">
+               BlueprintName = "Get Outfit Stylist"
+               ReferencedContainer = "container:Get Outfit Stylist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69A6F6EF22BA26B7002A3B49"
             BuildableName = "Get Outfit.app"
-            BlueprintName = "Outfit Selection"
-            ReferencedContainer = "container:Outfit Selection.xcodeproj">
+            BlueprintName = "Get Outfit Stylist"
+            ReferencedContainer = "container:Get Outfit Stylist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69A6F6EF22BA26B7002A3B49"
             BuildableName = "Get Outfit.app"
-            BlueprintName = "Outfit Selection"
-            ReferencedContainer = "container:Outfit Selection.xcodeproj">
+            BlueprintName = "Get Outfit Stylist"
+            ReferencedContainer = "container:Get Outfit Stylist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
