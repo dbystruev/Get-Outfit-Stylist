@@ -32,4 +32,7 @@ struct User: Codable {
         case pictureURL = "picture"
         case sizes
     }
+    
+    /// If true user's  wardrobe is completed
+    var wardrobeCompleted = false
 }

@@ -119,6 +119,7 @@
 		6964207D270B2A4200FCDF5A /* ItemCatalog+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964207C270B2A4200FCDF5A /* ItemCatalog+Equatable.swift */; };
 		6964C650272B4A2B00A71C8F /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964C64F272B4A2B00A71C8F /* Items.swift */; };
 		6966AF552796C79200DC1D4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966AF542796C79200DC1D4A /* User.swift */; };
+		6966AF572796C8FB00DC1D4A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966AF562796C8FB00DC1D4A /* Users.swift */; };
 		69672AE922F1D06A0053FB85 /* OutfitViewController+present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69672AE822F1D06A0053FB85 /* OutfitViewController+present.swift */; };
 		696E875B256463160061802E /* Double+asPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E875A256463160061802E /* Double+asPrice.swift */; };
 		696E876F25647C0F0061802E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 696E876E25647C0F0061802E /* README.md */; };
@@ -374,6 +375,7 @@
 		6964207C270B2A4200FCDF5A /* ItemCatalog+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemCatalog+Equatable.swift"; sourceTree = "<group>"; };
 		6964C64F272B4A2B00A71C8F /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		6966AF542796C79200DC1D4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6966AF562796C8FB00DC1D4A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		69672AE822F1D06A0053FB85 /* OutfitViewController+present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OutfitViewController+present.swift"; sourceTree = "<group>"; };
 		696E875A256463160061802E /* Double+asPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+asPrice.swift"; sourceTree = "<group>"; };
 		696E876E25647C0F0061802E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -839,6 +841,7 @@
 			isa = PBXGroup;
 			children = (
 				6966AF542796C79200DC1D4A /* User.swift */,
+				6966AF562796C8FB00DC1D4A /* Users.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -1614,6 +1617,7 @@
 				69007CEC26EA6324001170D0 /* Occasion.swift in Sources */,
 				69C5CBDA260A045A00DE22E6 /* Swift.Collection+safeIndex.swift in Sources */,
 				695367FB25F7B0AA0024EC8B /* AppDelegate+UNUserNotificationCenterDelegate.swift in Sources */,
+				6966AF572796C8FB00DC1D4A /* Users.swift in Sources */,
 				69F60BD6272BFBD6004C4EA3 /* Swift.Collection+items.swift in Sources */,
 				698A7F9226E8E4B1006C36FD /* PList.swift in Sources */,
 				695AC868275776D8005E72AD /* Occasion+static.swift in Sources */,

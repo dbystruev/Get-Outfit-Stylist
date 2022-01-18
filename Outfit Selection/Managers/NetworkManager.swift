@@ -244,7 +244,7 @@ class NetworkManager {
     /// Call /occasions API
     /// - Parameters:
     ///   - IDs: the list of occasion IDs to get, if nil (default) — get all
-    ///   - completion: closure called after the request is finished, with list of occasions if successfull, or with nil if not
+    ///   - completion: closure called after the request is finished, with the list of occasions if successfull, or with nil if not
     func getOccasions(_ IDs: [Int]? = nil, completion: @escaping (_ occasions: Occasions?) -> Void) {
         // Include id=in.(..., ...) parameter
         let parameters = IDs == nil || IDs?.count == 0 ? [:] : ["id": "in.(\((IDs ?? []).commaJoined))"]
@@ -284,6 +284,19 @@ class NetworkManager {
     /// - Parameter completion: closure called after the request is finished, with list of occasions if successfull, or with nil if not
     func getOnboarding(completion: @escaping (_ onboardings: [Onboarding]?) -> Void) {
         get("onboarding", completion: completion)
+    }
+    
+    /// Call /users API
+    /// - Parameters:
+    ///   - IDs: the list of user IDs to get, if nil (default) — get all
+    ///   - completion: closure called after the request is finished, with the list of the users if successfull, or with nil if not
+    func getUsers(_ IDs: [Int]? = nil, completion: @escaping (_ users: Users?) -> Void) {
+        // Include id=in.(..., ...) parameter
+        let parameters = IDs == nil || IDs?.count == 0 ? [:] : ["id": "in.(\((IDs ?? []).commaJoined))"]
+        
+        get("users", parameters: parameters) { (users: Users?) in
+            completion(users)
+        }
     }
     
     /// Prepare parameters dictionary for given categories, gender, and vendors
