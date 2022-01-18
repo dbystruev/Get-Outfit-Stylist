@@ -90,6 +90,7 @@ extension AppDelegate {
             // Show elapsed time
             let elapsedTime = Date().timeIntervalSince(startTime)
             debug("INFO: Loaded \(Users.all.count) users in \(elapsedTime.asTime) s")
+            Users.all.forEach { debug($0) }
         }
     }
 }
