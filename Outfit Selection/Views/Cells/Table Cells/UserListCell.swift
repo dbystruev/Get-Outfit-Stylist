@@ -20,7 +20,17 @@ class UserListCell: UITableViewCell {
 
     // MARK: - Public Methods
     public func configureContent(with user: User) {
-        avatarImageView.sd_setImage(with: user.pictureURL)
+        let roundCornerTransformer = SDImageRoundCornerTransformer(
+            radius: .infinity,      // changed to half of the width or height
+            corners: .allCorners,
+            borderWidth: 2,
+            borderColor: ColorCompatibility.label
+        )
+        avatarImageView.sd_setImage(
+            with: user.pictureURL,
+            placeholderImage: nil,
+            context: [.imageTransformer: roundCornerTransformer]
+        )
         userNameLabel.text = user.name
     }
 
