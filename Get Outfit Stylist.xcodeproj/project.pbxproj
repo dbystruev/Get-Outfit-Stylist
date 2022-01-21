@@ -267,7 +267,6 @@
 		69FB0E9F271460BB006C20E9 /* OccasionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB0E9E271460BB006C20E9 /* OccasionButton.swift */; };
 		69FB0EA12714656D006C20E9 /* Occasion+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB0EA02714656D006C20E9 /* Occasion+CustomStringConvertible.swift */; };
 		69FB0EA327148AAE006C20E9 /* OccasionsViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB0EA227148AAE006C20E9 /* OccasionsViewController+Actions.swift */; };
-		69FBB20722F1ABE000187562 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FBB20622F1ABE000187562 /* GenderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -544,7 +543,6 @@
 		69FB0E9E271460BB006C20E9 /* OccasionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccasionButton.swift; sourceTree = "<group>"; };
 		69FB0EA02714656D006C20E9 /* Occasion+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Occasion+CustomStringConvertible.swift"; sourceTree = "<group>"; };
 		69FB0EA227148AAE006C20E9 /* OccasionsViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OccasionsViewController+Actions.swift"; sourceTree = "<group>"; };
-		69FBB20622F1ABE000187562 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -813,7 +811,6 @@
 			isa = PBXGroup;
 			children = (
 				6986612525705F45008F94CA /* BrandsViewController */,
-				69FBB20622F1ABE000187562 /* GenderViewController.swift */,
 				695756622715961B007ADE02 /* NextButtonViewController.swift */,
 				69007CFE26EA771B001170D0 /* OccasionsViewController */,
 				6957565F271590CB007ADE02 /* OnboardingViewController.swift */,
@@ -1818,7 +1815,6 @@
 				69642071270AE6BC00FCDF5A /* Collection+UserDefaults.swift in Sources */,
 				69FB0E9F271460BB006C20E9 /* OccasionButton.swift in Sources */,
 				69F046FC26FDDB87002E16C0 /* BrandsCollectionView.swift in Sources */,
-				69FBB20722F1ABE000187562 /* GenderViewController.swift in Sources */,
 				69A0C9EA2705B3F200C49977 /* WhiteLabel.swift in Sources */,
 				69AB228C22BA4BE400C7FA8D /* OutfitViewController+Actions.swift in Sources */,
 				69827B34273BF05B00C59D68 /* String+localized.swift in Sources */,

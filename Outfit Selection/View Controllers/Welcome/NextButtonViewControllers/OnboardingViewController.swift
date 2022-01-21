@@ -130,7 +130,7 @@ class OnboardingViewController: NextButtonViewController {
         
         // Transition to gender view controller
         UserDefaults.hasSeenAppIntroduction = true
-        performSegue(withIdentifier: GenderViewController.segueIdentifier, sender: sender)
+        performSegue(withIdentifier: UserListViewController.segueIdentifier, sender: sender)
     }
     
     /// Called when one of dash or dot progress buttons is tapped

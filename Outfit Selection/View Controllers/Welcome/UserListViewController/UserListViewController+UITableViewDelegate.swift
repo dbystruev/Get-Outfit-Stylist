@@ -11,7 +11,12 @@ import UIKit
 extension UserListViewController: UITableViewDelegate {
     /// Called when the user is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "userSelectedSegue", sender: self)
+        guard let user = userList[safe: indexPath.row] else {
+            debug("ERROR: \(indexPath.row) is outside of 0 ..< \(userList.count)")
+            return
+        }
+        Gender.current = user.gender
+        performSegue(withIdentifier: BrandsViewController.segueIdentifier, sender: self)
     }
     
     /// Get the height of the cell

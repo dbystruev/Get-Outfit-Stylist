@@ -169,11 +169,11 @@ extension OutfitViewController {
         ) ?? welcomeNavigationController.findViewController(
             ofType: BrandsViewController.self
         ) ?? welcomeNavigationController.findViewController(
-            ofType: GenderViewController.self
+            ofType: UserListViewController.self
         ) else {
             debug(
-                "WARNING: Can't find \(OccasionsViewController.self)",
-                "or \(BrandsViewController.self) or \(GenderViewController.self) in",
+                "WARNING: Can't find \(OccasionsViewController.self),",
+                "or \(BrandsViewController.self), or \(UserListViewController.self) in",
                 welcomeNavigationController
             )
             return
