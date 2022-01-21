@@ -69,8 +69,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the user" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPj-xJ-3OX" userLabel="Choose one or more brands you like">
+                                <rect key="frame" x="16" y="96" width="343" height="24.666666666666671"/>
+                                <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="579-zI-29R">
-                                <rect key="frame" x="16" y="96" width="343" height="625"/>
+                                <rect key="frame" x="16" y="128.66666666666669" width="343" height="592.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userListCellReuseId" rowHeight="100" id="1fs-do-9t6" customClass="UserListCell" customModule="Concept_Group" customModuleProvider="target">
@@ -86,15 +92,25 @@
                                                         <constraint firstAttribute="width" secondItem="17z-NC-Mwu" secondAttribute="height" id="Wrc-9l-9YX"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-FH-MVs">
+                                                    <rect key="frame" x="100" y="8" width="235" height="41"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="t7R-FH-MVs" firstAttribute="leading" secondItem="17z-NC-Mwu" secondAttribute="trailing" constant="8" id="2ZE-no-rpx"/>
                                                 <constraint firstItem="17z-NC-Mwu" firstAttribute="leading" secondItem="87d-KJ-60N" secondAttribute="leading" constant="8" id="5Nb-h7-mks"/>
                                                 <constraint firstItem="17z-NC-Mwu" firstAttribute="top" secondItem="87d-KJ-60N" secondAttribute="top" constant="8" id="Yw9-e1-eaW"/>
                                                 <constraint firstAttribute="bottom" secondItem="17z-NC-Mwu" secondAttribute="bottom" constant="8" id="kV3-zv-jJ9"/>
+                                                <constraint firstAttribute="trailing" secondItem="t7R-FH-MVs" secondAttribute="trailing" constant="8" id="lpy-U1-aGq"/>
+                                                <constraint firstItem="t7R-FH-MVs" firstAttribute="top" secondItem="87d-KJ-60N" secondAttribute="top" constant="8" id="qX4-ES-bH1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="avatarImageView" destination="17z-NC-Mwu" id="5UC-CX-jZb"/>
+                                            <outlet property="userNameLabel" destination="t7R-FH-MVs" id="3Xi-8P-P1m"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -103,10 +119,13 @@
                         <viewLayoutGuide key="safeArea" id="omD-KE-YD5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="579-zI-29R" firstAttribute="top" secondItem="omD-KE-YD5" secondAttribute="top" constant="8" id="DzE-eC-27M"/>
+                            <constraint firstItem="WPj-xJ-3OX" firstAttribute="top" secondItem="omD-KE-YD5" secondAttribute="top" constant="8" id="BDO-Ir-Qgd"/>
+                            <constraint firstItem="579-zI-29R" firstAttribute="top" secondItem="WPj-xJ-3OX" secondAttribute="bottom" constant="8" id="DzE-eC-27M"/>
+                            <constraint firstItem="omD-KE-YD5" firstAttribute="trailing" secondItem="WPj-xJ-3OX" secondAttribute="trailing" constant="16" id="Pm8-it-dim"/>
                             <constraint firstItem="omD-KE-YD5" firstAttribute="trailing" secondItem="579-zI-29R" secondAttribute="trailing" constant="16" id="Qgz-eO-FQC"/>
                             <constraint firstItem="579-zI-29R" firstAttribute="leading" secondItem="omD-KE-YD5" secondAttribute="leading" constant="16" id="fcg-IX-dN4"/>
                             <constraint firstItem="omD-KE-YD5" firstAttribute="bottom" secondItem="579-zI-29R" secondAttribute="bottom" constant="8" id="kCi-TD-rAQ"/>
+                            <constraint firstItem="WPj-xJ-3OX" firstAttribute="leading" secondItem="omD-KE-YD5" secondAttribute="leading" constant="16" id="wMn-n0-2IP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ldc-Kf-s86"/>
@@ -291,7 +310,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one or more brands you like " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB4-2h-AF5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one or more brands you like " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB4-2h-AF5" userLabel="Choose one or more brands you like">
                                 <rect key="frame" x="16" y="104" width="343" height="24.666666666666657"/>
                                 <fontDescription key="fontDescription" name="NotoSans-Medium" family="Noto Sans" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -652,7 +671,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Y3I-SD-N7s"/>
+        <segue reference="jyn-7A-y6N"/>
         <segue reference="YXp-IB-DIP"/>
     </inferredMetricsTieBreakers>
     <resources>
