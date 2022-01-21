@@ -32,12 +32,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="hGb-j2-DhN" kind="relationship" relationship="rootViewController" id="QOJ-7D-lul"/>
+                        <segue destination="4WG-ni-bM0" kind="relationship" relationship="rootViewController" id="pyZ-LW-WJZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lB8-Pg-SIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2007" y="-619"/>
+            <point key="canvasLocation" x="-2874" y="-606"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fZH-RT-1j2">
@@ -59,7 +59,65 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDW-cA-Ivf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3903" y="137"/>
+            <point key="canvasLocation" x="-4564" y="137"/>
+        </scene>
+        <!--User List View Controller-->
+        <scene sceneID="du8-BU-Kdm">
+            <objects>
+                <viewController id="4WG-ni-bM0" customClass="UserListViewController" customModule="Concept_Group" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k4P-Pg-r7v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="579-zI-29R">
+                                <rect key="frame" x="16" y="96" width="343" height="625"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userListCellReuseId" rowHeight="100" id="1fs-do-9t6" customClass="UserListCell" customModule="Concept_Group" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="343" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1fs-do-9t6" id="87d-KJ-60N">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17z-NC-Mwu">
+                                                    <rect key="frame" x="8" y="8" width="84" height="84"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="17z-NC-Mwu" secondAttribute="height" id="Wrc-9l-9YX"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="17z-NC-Mwu" firstAttribute="leading" secondItem="87d-KJ-60N" secondAttribute="leading" constant="8" id="5Nb-h7-mks"/>
+                                                <constraint firstItem="17z-NC-Mwu" firstAttribute="top" secondItem="87d-KJ-60N" secondAttribute="top" constant="8" id="Yw9-e1-eaW"/>
+                                                <constraint firstAttribute="bottom" secondItem="17z-NC-Mwu" secondAttribute="bottom" constant="8" id="kV3-zv-jJ9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="17z-NC-Mwu" id="5UC-CX-jZb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="omD-KE-YD5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="579-zI-29R" firstAttribute="top" secondItem="omD-KE-YD5" secondAttribute="top" constant="8" id="DzE-eC-27M"/>
+                            <constraint firstItem="omD-KE-YD5" firstAttribute="trailing" secondItem="579-zI-29R" secondAttribute="trailing" constant="16" id="Qgz-eO-FQC"/>
+                            <constraint firstItem="579-zI-29R" firstAttribute="leading" secondItem="omD-KE-YD5" secondAttribute="leading" constant="16" id="fcg-IX-dN4"/>
+                            <constraint firstItem="omD-KE-YD5" firstAttribute="bottom" secondItem="579-zI-29R" secondAttribute="bottom" constant="8" id="kCi-TD-rAQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ldc-Kf-s86"/>
+                    <connections>
+                        <outlet property="userListTableView" destination="579-zI-29R" id="ia8-b8-M29"/>
+                        <segue destination="hGb-j2-DhN" kind="show" identifier="userSelectedSegue" id="zhc-v8-gAm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIL-74-3Xk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2873" y="139"/>
         </scene>
         <!--Gender View Controller-->
         <scene sceneID="2bM-CW-jpe">
@@ -473,12 +531,12 @@
                         <outletCollection property="progressWidthConstraints" destination="MWe-w6-dsj" collectionClass="NSMutableArray" id="2Xt-vS-7OK"/>
                         <outletCollection property="progressWidthConstraints" destination="BEk-C2-Kqh" collectionClass="NSMutableArray" id="XE0-RN-3Nx"/>
                         <outletCollection property="progressWidthConstraints" destination="7JX-4g-8dK" collectionClass="NSMutableArray" id="ULZ-ET-I5O"/>
-                        <segue destination="hGb-j2-DhN" kind="show" identifier="genderViewControllerSegue" id="pRR-NZ-3hy"/>
+                        <segue destination="4WG-ni-bM0" kind="show" identifier="genderViewControllerSegue" id="YXp-IB-DIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLZ-Hs-344" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2961" y="137"/>
+            <point key="canvasLocation" x="-3745" y="137"/>
         </scene>
         <!--Occasions-->
         <scene sceneID="Uax-un-n1R">
@@ -594,8 +652,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jyn-7A-y6N"/>
-        <segue reference="pRR-NZ-3hy"/>
+        <segue reference="Y3I-SD-N7s"/>
+        <segue reference="YXp-IB-DIP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checked" width="18" height="18"/>
