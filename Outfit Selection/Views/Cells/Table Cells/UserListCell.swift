@@ -6,6 +6,7 @@
 //  Copyright © 2022 Denis Bystruev. All rights reserved.
 //
 
+import SDWebImage
 import UIKit
 
 class UserListCell: UITableViewCell {
@@ -19,7 +20,7 @@ class UserListCell: UITableViewCell {
 
     // MARK: - Public Methods
     public func configureContent(with user: User) {
-        avatarImageView.configure(with: user.pictureURL)
+        avatarImageView.sd_setImage(with: user.pictureURL)
         userNameLabel.text = user.name
     }
 
