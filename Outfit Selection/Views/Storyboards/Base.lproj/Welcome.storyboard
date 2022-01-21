@@ -98,11 +98,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgu-Gb-yln">
+                                                    <rect key="frame" x="78" y="81" width="20.333333333333329" height="11"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="8"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="t7R-FH-MVs" firstAttribute="leading" secondItem="17z-NC-Mwu" secondAttribute="trailing" constant="8" id="2ZE-no-rpx"/>
                                                 <constraint firstItem="17z-NC-Mwu" firstAttribute="leading" secondItem="87d-KJ-60N" secondAttribute="leading" constant="8" id="5Nb-h7-mks"/>
                                                 <constraint firstAttribute="bottom" secondItem="t7R-FH-MVs" secondAttribute="bottom" constant="8" id="8mc-M6-uSL"/>
+                                                <constraint firstItem="17z-NC-Mwu" firstAttribute="bottom" secondItem="Mgu-Gb-yln" secondAttribute="bottom" id="Uty-Y8-wWr"/>
+                                                <constraint firstItem="Mgu-Gb-yln" firstAttribute="leading" secondItem="17z-NC-Mwu" secondAttribute="trailing" constant="-14" id="VXM-hY-qlR"/>
                                                 <constraint firstItem="17z-NC-Mwu" firstAttribute="top" secondItem="87d-KJ-60N" secondAttribute="top" constant="8" id="Yw9-e1-eaW"/>
                                                 <constraint firstAttribute="bottom" secondItem="17z-NC-Mwu" secondAttribute="bottom" constant="8" id="kV3-zv-jJ9"/>
                                                 <constraint firstAttribute="trailing" secondItem="t7R-FH-MVs" secondAttribute="trailing" constant="8" id="lpy-U1-aGq"/>
@@ -111,6 +119,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="avatarImageView" destination="17z-NC-Mwu" id="5UC-CX-jZb"/>
+                                            <outlet property="genderLabel" destination="Mgu-Gb-yln" id="g28-UO-4Cb"/>
                                             <outlet property="userNameLabel" destination="t7R-FH-MVs" id="3Xi-8P-P1m"/>
                                         </connections>
                                     </tableViewCell>

@@ -13,6 +13,7 @@ class UserListCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
     
     // MARK: - Static Constants
@@ -31,6 +32,7 @@ class UserListCell: UITableViewCell {
             placeholderImage: nil,
             context: [.imageTransformer: roundCornerTransformer]
         )
+        genderLabel.text = user.gender.description
         userNameLabel.text = user.name
     }
 
