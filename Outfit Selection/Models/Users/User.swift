@@ -24,6 +24,9 @@ struct User: Codable {
     /// User's sizes
     let sizes: [String]
     
+    /// If true user's  wardrobe is completed
+    var wardrobeCompleted = false
+    
     /// The names of user properties in the database
     enum CodingKeys: String, CodingKey {
         case id
@@ -32,7 +35,4 @@ struct User: Codable {
         case pictureURL = "picture"
         case sizes
     }
-    
-    /// If true user's  wardrobe is completed
-    var wardrobeCompleted = false
 }

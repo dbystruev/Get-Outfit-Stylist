@@ -55,6 +55,7 @@ Get Outfit [Team](https://www.getoutfit.ru/aboutus) for invaluable contributions
 
 Icons by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com):
 * [Clothes](https://www.flaticon.com/free-icon/clothes_130302)
+* [Fashion](https://www.flaticon.com/free-icon/fashion_1198358)
 * [Like](https://www.flaticon.com/premium-icon/like_2031035)
 * [Like Filled](https://www.flaticon.com/premium-icon/like_2030957)
 * [Shuffle](https://www.flaticon.com/free-icon/shuffle_359936)
