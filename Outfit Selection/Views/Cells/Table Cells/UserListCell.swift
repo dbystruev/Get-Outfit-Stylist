@@ -18,6 +18,12 @@ class UserListCell: UITableViewCell {
     
     // MARK: - Static Constants
     public static let height: CGFloat = 100
+    
+    // MARK: - Constructors
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        selectionStyle = .none
+    }
 
     // MARK: - Public Methods
     public func configureContent(with user: User) {
